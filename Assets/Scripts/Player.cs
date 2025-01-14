@@ -11,13 +11,16 @@ public class Player : MonoBehaviour
     private int _numSeedsLeft;
     private int _numSeedsPlanted;
 
+    private Rigidbody2D rb;
+
+
     private void Start ()
     {
 
-        rb = GetComponent<RigidBody2D>();
+        rb = GetComponent<Rigidbody2D>();
         // get rigid body 2d component
 
-        UpdateSeeds();
+        _plantCountUI.UpdateSeeds(_numSeedsLeft,_numSeedsPlanted);
         // call UpdateUI method
         
     }
@@ -29,7 +32,7 @@ public class Player : MonoBehaviour
 
         Vector2 moveDirection = new Vector2(moveX, moveY). normalized;
 
-        rb.velocity = moveDirection*moveSpeed;
+        rb.velocity = moveDirection*_speed;
 
         if(Input.GetKeyDown(KeyCode.Space))
         {
