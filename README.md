@@ -2,18 +2,11 @@
 # HW1
 ## W1L2 In-Class Activity
 
-Put your notes from the W1L2 (Thurs, Jan 9) in-class activity here.
-
-## Devlog
-Prompt: Include the HW1 break-down exercise you wrote during the Week 1 - Lecture 2 (Jan 9) in-class activity (above). If you did not attend and perform this activity, review the lecture slides and write your own plan for how you believe HW1 should be built. If your initially proposed plan turned out significantly different than the activity answers given by Prof Reid, you may want to note what was different. Then, write about how the plan you wrote in the break-down connects to the code you wrote. Cite specific class names and method names in the code and GameObjects in your Unity Scene.
-
-
-Write your Devlog here!
-
 Committed After sending the email to Prof.Reid. I realized I saved the devlog locally on my laptop but did not commit the changes to the README.md to GitHub, I apologize again for the late turn-in.
 
 In terms of objects, HW1 is composed of the UI of seeds planted (recording the number of seeds planted) and seeds remaining (display the number of seeds remaining), the game object of the player with a cat sprite, and the game object of the planted seed represented by a germinating plant. The player object, its attributes include moving speed and size; its actions include moving across four different directions using the WASD key and space bar to plant the seed. For the seeds object, its attribute includes size; its action is being planted by the player object when the space bar is pressed. These objects interact with each other. When the player controls the player object to move around the scene using the WASD key, they can use the space bar to plant seeds along the way. After a seed planting action, the UI will update the latest data displaying seeds remaining and seeds planted.
 
+## Devlog
 The following is how the breakdown is connected to the actual script writing and game building in Unity.
 
 Player Movement: attributes _speed. Update() method for handling input of WASD key for movement using Unity’s Input.GetAxisRaw
@@ -41,3 +34,8 @@ The Seed prefab is
 ## Open-Source Assets
 If you added any other outside assets, list them here!
 - [Sprout Lands sprite asset pack](https://cupnooble.itch.io/sprout-lands-asset-pack) - character and item sprites
+
+## Prof comments
+Thank you for clearly connecting your HW1 break-down to the code that you wrote and the way you set up your Unity Scene! You'll earn full points for this Devlog.
+
+Please make sure your in-class activity notes and your Devlog are sorted in to the proper sections- I moved some text around based on what I assumed was your activity VS. your Devlog. This will make it a lot easier for me to read. Also, you might want to check out the [README formatting guide here](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
